@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Menu>
+            <MenuItem x:Name="Agreement" Header="Договор" Click="Agreement_OnClick"></MenuItem>
+            <MenuItem x:Name="Person" Header="Клиент" Click="Person_OnClick"></MenuItem>
+            <MenuItem x:Name="Status" Header="Статус" Click="Status_OnClick"></MenuItem>
+            <MenuItem x:Name="Type" Header="Тип" Click="Type_OnClick"></MenuItem>
+        </Menu>
+    </Grid>
+</Window>

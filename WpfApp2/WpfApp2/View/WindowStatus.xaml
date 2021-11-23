@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.View.WindowStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.View"
+        mc:Ignorable="d"
+        Title="Статус" Height="199.01" Width="455.446">
+    <ListView x:Name="Status">
+        <ListView.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Статус" Width="80" DisplayMemberBinding="{Binding Status}"/>
+                </GridView.Columns>
+            </GridView>
+        </ListView.View>
+    </ListView>
+</Window>

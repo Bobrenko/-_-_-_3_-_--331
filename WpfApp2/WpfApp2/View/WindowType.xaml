@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.View.WindowType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.View"
+        mc:Ignorable="d"
+        Title="Тип" Height="197.525" Width="400">
+    <ListView x:Name="Type">
+        <ListView.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Тип договора" Width="80" DisplayMemberBinding="{Binding Type}"/>
+                </GridView.Columns>
+            </GridView>
+        </ListView.View>
+    </ListView>
+</Window>
