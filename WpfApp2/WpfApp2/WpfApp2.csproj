@@ -66,6 +66,12 @@
     <Compile Include="View\WindowAgreement.xaml.cs">
       <DependentUpon>WindowAgreement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\WindowNewStatus.xaml.cs">
+      <DependentUpon>WindowNewStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WindowNewType.xaml.cs">
+      <DependentUpon>WindowNewType.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\WindowPerson.xaml.cs">
       <DependentUpon>WindowPerson.xaml</DependentUpon>
     </Compile>
@@ -88,6 +94,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\WindowAgreement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WindowNewStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WindowNewType.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -66,7 +66,7 @@ namespace WpfApp2.View
                 {
                     Id = p.Id,
                     PersonId = per.Shifer,
-                    TypeId = typ.Type,
+                    TypeId = typ.NameType,
                     StatusId = stat.Status,
                     Number = p.Number,
                     DataOpen = p.DataOpen,

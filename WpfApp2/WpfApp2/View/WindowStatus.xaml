@@ -5,15 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2.View"
         mc:Ignorable="d"
-        Title="Статус" Height="199.01" Width="455.446">
-    <ListView x:Name="Status">
-        <ListView.View>
-            <GridView>
-                <GridView.Columns>
-                    <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
-                    <GridViewColumn Header="Статус" Width="80" DisplayMemberBinding="{Binding Status}"/>
-                </GridView.Columns>
-            </GridView>
-        </ListView.View>
-    </ListView>
+        Title="Cтатус" Height="300" Width="300">
+    <StackPanel Background="#FFD8D8D8">
+        <StackPanel Orientation="Horizontal" Background="#FFE4E0E0">
+            <Button x:Name="btnAdd" Margin="10,10,5,10" Content="Добавить" Height="25" Click="btnAdd_Click"/>
+            <Button x:Name="btnEdit" Margin="10,10,5,10" Content="Редактировать" Height="25" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Margin="10,10,5,10" Content="Удалить" Height="25" Click="btnDelete_Click"/>
+        </StackPanel>
+        <ListView x:Name="Status" Background="#FFD3CDCD">
+            <ListView.View >
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Наименование статуса" DisplayMemberBinding="{Binding Status}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
 </Window>

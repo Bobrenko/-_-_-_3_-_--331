@@ -9,12 +9,16 @@ namespace WpfApp2.Model
     public class AType
     {
         public int Id { get; set; }
-        public string Type { get; set; }
+        public string NameType { get; set; }
         public AType() { }
         public AType(int id, string type1)
         {
             this.Id = id;
-            this.Type = type1;
+            this.NameType = type1;
+        }
+        public AType ShallowCopy()
+        {
+            return (AType)this.MemberwiseClone();
         }
     }
 }

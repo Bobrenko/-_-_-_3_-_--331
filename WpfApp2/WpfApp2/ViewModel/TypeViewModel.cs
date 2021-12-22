@@ -17,20 +17,36 @@ namespace WpfApp2.ViewModel
                 new AType
                 {
                     Id = 1,
-                    Type = "Дилерский",
+                    NameType = "Дилерский",
                 });
             this.ListType.Add(
                 new AType
                 {
                     Id = 2,
-                    Type = "Брокерский",
+                    NameType = "Брокерский",
                 });
             this.ListType.Add(
                 new AType
                 {
                     Id = 3,
-                    Type = "Управление",
+                    NameType = "Управление",
                 }); 
+        }
+        /// <summary>
+        /// Нахождение максимального Id
+        /// </summary>
+        /// <returns></returns>
+        public int MaxId()
+        {
+            int max = 0;
+            foreach (var r in this.ListType)
+            {
+                if (max < r.Id)
+                {
+                    max = r.Id;
+                };
+            }
+            return max;
         }
     }
 }

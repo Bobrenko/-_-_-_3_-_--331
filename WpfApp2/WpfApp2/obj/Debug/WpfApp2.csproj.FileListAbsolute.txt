@@ -21,3 +21,7 @@ C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowAgreement.baml
 C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowPerson.baml
 C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowStatus.baml
 C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowType.baml
+C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowNewStatus.g.cs
+C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowNewType.g.cs
+C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowNewStatus.baml
+C:\Users\user\source\repos\WpfApp2\WpfApp2\obj\Debug\View\WindowNewType.baml

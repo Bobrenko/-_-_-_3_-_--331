@@ -16,5 +16,9 @@ namespace WpfApp2.Model
             this.Id = id;
             this.Status = status;
         }
+        public AStatus ShallowCopy()
+        {
+            return (AStatus)this.MemberwiseClone();
+        }
     }
 }

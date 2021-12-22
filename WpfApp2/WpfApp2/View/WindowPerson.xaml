@@ -6,17 +6,24 @@
         xmlns:local="clr-namespace:WpfApp2.View"
         mc:Ignorable="d"
         Title="Клиент" Height="286.634" Width="500">
-    <ListView x:Name="Person">
-        <ListView.View>
-            <GridView>
-                <GridView.Columns>
-                    <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
-                    <GridViewColumn Header="Шифр" Width="80" DisplayMemberBinding="{Binding Shifer}"/>
-                    <GridViewColumn Header="ИНН" Width="60" DisplayMemberBinding="{Binding Inn}"/>
-                    <GridViewColumn Header="Тип" Width="80" DisplayMemberBinding="{Binding Type}"/>
-                    <GridViewColumn Header="Дата регистрации" Width="110" DisplayMemberBinding="{Binding Data}"/>
-                </GridView.Columns>
-            </GridView>
-        </ListView.View>
-    </ListView>
+    <StackPanel>
+       <!-- <StackPanel Orientation="Horizontal" Background="#FFE4E0E0">
+            <Button x:Name="btnAdd" Margin="10,10,5,10" Content="Добавить" Height="25" Click="btnAdd_Click"/>
+            <Button x:Name="btnEdit" Margin="10,10,5,10" Content="Редактировать" Height="25" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Margin="10,10,5,10" Content="Удалить" Height="25"  Click="btnDelete_Click"/>
+        </StackPanel>-->
+        <ListView x:Name="Person">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Шифр" Width="80" DisplayMemberBinding="{Binding Shifer}"/>
+                        <GridViewColumn Header="ИНН" Width="60" DisplayMemberBinding="{Binding Inn}"/>
+                        <GridViewColumn Header="Тип" Width="80" DisplayMemberBinding="{Binding Type}"/>
+                        <GridViewColumn Header="Дата регистрации" Width="110" DisplayMemberBinding="{Binding Data}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
 </Window>

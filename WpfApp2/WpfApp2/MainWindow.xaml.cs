@@ -45,5 +45,8 @@ namespace WpfApp2
             WindowType wType = new WindowType();
             wType.Show();
         }
+        public static int IdStatus { get; set; }
+        public static int IdType { get; set; }
+
     }
 }
